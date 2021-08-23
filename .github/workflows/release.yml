@@ -27,7 +27,7 @@ jobs:
         push: true
         tags: ghcr.io/ducksify/molecule/debian:latest
 
-    - name: Build and push Debian Docker image
+    - name: Build and push Ubuntu Docker image
       uses: docker/build-push-action@v2.7.0
       with:
         context: ubuntu/.
