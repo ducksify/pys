@@ -41,3 +41,10 @@ jobs:
         push: true
         platforms: linux/amd64,linux/arm64
         tags: ghcr.io/ducksify/molecule/ubuntu:latest
+    - name: Build and push Ubuntu Docker image
+      uses: docker/build-push-action@v2.7.0
+      with:
+        context: centos7/.
+        push: true
+        platforms: linux/amd64,linux/arm64
+        tags: ghcr.io/ducksify/molecule/centos7:latest
